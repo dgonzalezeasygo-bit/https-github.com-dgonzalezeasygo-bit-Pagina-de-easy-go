@@ -7,6 +7,14 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<a href="recent:///9800b4e4a25c7bc9986fe39468b9fc94" style="padding: 10px 15px; background: orange; color: white; text-decoration: none; border-radius: 5px;">
+  Volver a Inicio
+  <a href="file:///home/dennise-gonzalez/Documentos/Easy%20Go#servicios">Servicios</a>
+  <a href="file:///home/dennise-gonzalez/Documentos/Easy%20Go#quienes">Quienes somos</a>
+  <a href="file:///home/dennise-gonzalez/Documentos/Easy%20Go#contacto">Contactanos</a>
+
+
+</a>
 
   <!-- Barra idéntica a la página principal -->
   <header>
@@ -55,7 +63,7 @@
       <img src="/home/dennise-gonzalez/Descargas/19 articulos/Articulo 2.png" alt="Zero-Party Data">
       <div class="blog-content">
         <h3>El Futuro Sin Cookies: Cómo Aprovechar el Zero-Party Data</h3>
-        <p>Adapta tu marketing al futuro sin cookies con Zero-Party Data. TPP te ayuda a ofrecer experiencias personalizadas y éticas que construyen confianza y lealtad. <a href="#"></a></p>
+        <p>Adapta tu marketing al futuro sin cookies con Zero-Party Data. TPP te ayuda a ofrecer experiencias personalizadas y éticas que construyen confianza y lealtad. <a href="#">Leer más...</a></p>
       </div>
       <div class="blog-footer"><div class="line"></div><div class="social-icons"><a href="#">f</a><a href="#" class="linkedin">in</a></div></div>
     </div>
@@ -229,12 +237,40 @@
       </div>
       <div class="blog-footer"><div class="line"></div><div class="social-icons"><a href="#">f</a><a href="#" class="linkedin">in</a></div></div>
     </div>
-
+<a href="https://api.whatsapp.com/send?phone=50224966500&text=Quiero%20informaci%C3%B3n%20sobre%20sus%20productos...%20" target="_blank" id="whatsapp-logo">
+  <img src="/home/dennise-gonzalez/Descargas/MARKETING ONLINE - Las mejores soluciones de Publicidad Online_files/61ef94f402022064686df6b2_Whazaaaaa.png" alt="WhatsApp">
+</a>
   </section>
 </body>
 </html>
 
 <style>
+#whatsapp-logo {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 60px; /* Tamaño pequeño */
+  height: 60px;
+  z-index: 1000;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #25D366; /* color verde WhatsApp */
+  transition: transform 0.3s ease;
+}
+
+#whatsapp-logo img {
+  max-width: 70%;
+  max-height: 70%;
+}
+
+#whatsapp-logo:hover {
+  transform: scale(1.1);
+}
 /*logo*/
   .logo {
     margin-left: 150px; /* mueve el logo a la derecha */

@@ -481,10 +481,11 @@ html {
   
   <a href="#servicios">Servicios</a>
   <a href="#quienes">¿Quiénes somos?</a>
-  <a href="/home/dennise-gonzalez/Descargas/Blog 1">Blog</a> <!-- Enlace directo al Blog -->
+  <a href="/home/dennise-gonzalez/Documentos/Blog 1">Blog</a> <!-- Enlace directo al Blog -->
 </nav>
 <nav>
   
+
   
 </nav>
 
@@ -541,6 +542,9 @@ html {
 </style>
   
 </header>
+<a href="recent:///e319d1775164a1463fca136c68b9feb1" style="padding: 10px 15px; background: #2238A8; color: white; text-decoration: none; border-radius: 5px;">
+  Ir al Blog
+</a>
 
 
   <div class="contenido">
@@ -575,7 +579,7 @@ html {
       <img src="/home/dennise-gonzalez/Descargas/MARKETING ONLINE - Las mejores soluciones de Publicidad Online_files/61ef8931bee36b4d388ee6a3_TPP_01_ConsultingYEstrategia_600PX.png" alt="Consulting y Estrategia">
       <h3>Consulting y Estrategia</h3>
       <p>Te apoyamos en la transformación digital y definimos el camino hacia tus objetivos.</p>
-      <a href="https://www.youtube.com/watch?v=ffxKSjUwKdU" target="_blank">Cotiza con nosotros</a>
+       <a href="file:///home/dennise-gonzalez/Documentos/Easy%20Go#contacto">Cotiza con nosotros</a>
     </div>
 
     <!-- Servicio 2 -->
@@ -583,7 +587,7 @@ html {
       <img src="/home/dennise-gonzalez/Descargas/MARKETING ONLINE - Las mejores soluciones de Publicidad Online_files/61ef893181e846c38ac04ff2_TPP_03_Capacitaciones_600PX.png" alt="Capacitaciones">
       <h3>Capacitaciones</h3>
       <p>Formamos equipos para dominar el marketing digital.</p>
-      <a href="https://www.youtube.com/watch?v=35WldwFFxhI" target="_blank">MCotiza con nosotros</a>
+    <a href="file:///home/dennise-gonzalez/Documentos/Easy%20Go#contacto">Cotiza con nosotros</a>
     </div>
 
       <!-- Servicio 3 -->
@@ -591,7 +595,7 @@ html {
       <img src="/home/dennise-gonzalez/Descargas/MARKETING ONLINE - Las mejores soluciones de Publicidad Online_files/1.png">
       <h3>Auditorías Digitales</h3>
       <p>Revisamos tus activos digitales para mejorar tus resultados online.</p>
-      <a href="https://www.youtube.com/watch?v=UvzLgLZJLss" target="_blank">Cotiza con nosotros</a>
+     <a href="file:///home/dennise-gonzalez/Documentos/Easy%20Go#contacto">Cotiza con nosotros</a>
     </div>
 
     <!-- Servicio 4 -->
@@ -599,15 +603,14 @@ html {
       <img src="/home/dennise-gonzalez/Descargas/MARKETING ONLINE - Las mejores soluciones de Publicidad Online_files/61ef893126f04c65bba40364_TPP_05_AnaliticaWeb_600PX.png" alt="Analítica Web">
       <h3>Analítica Web</h3>
       <p>Medimos tus métricas para maximizar el impacto de tus campañas.</p>
-      <a href="https://www.youtube.com/watch?v=IL7cE7wnQXA" target="_blank">Cotiza con nosotros</a>
-    </div>
-
+      <a href="file:///home/dennise-gonzalez/Documentos/Easy%20Go#contacto">Cotiza con nosotros</a>
+ </div>
     <!-- Servicio 5 -->
     <div class="tarjeta-servicio">
       <img src="/home/dennise-gonzalez/Descargas/MARKETING ONLINE - Las mejores soluciones de Publicidad Online_files/61ef8931bee36b81fd8ee6a2_TPP_07_CentralDeMedios_600PX.png" alt="Central de Medios">
       <h3>Central de Medios Digitales</h3>
       <p>Optimizamos tus campañas publicitarias para obtener mayor retorno.</p>
-      <a href="https://www.youtube.com/watch?v=E0EYlxCqJAA" target="_blank">Cotiza con nosotros</a>
+    <a href="file:///home/dennise-gonzalez/Documentos/Easy%20Go#contacto">Cotiza con nosotros</a>
     </div>
 
     <!-- Servicio 6 -->
@@ -615,7 +618,7 @@ html {
       <img src="/home/dennise-gonzalez/Descargas/MARKETING ONLINE - Las mejores soluciones de Publicidad Online_files/61ef89314238291038d7277a_TPP_04_CreatividadDigital_600PX.png" alt="Creatividad Digital">
       <h3>Creatividad Digital</h3>
       <p>Diseño gráfico estratégico para captar la atención en el momento justo.</p>
-      <a href="https://www.youtube.com/watch?v=QYh6mYIJG2Y" target="_blank">Cotiza con nosotros</a>
+   <a href="file:///home/dennise-gonzalez/Documentos/Easy%20Go#contacto">Cotiza con nosotros</a>
     </div>
 
   </div>
@@ -888,7 +891,7 @@ html {
     
     <!-- Logo (enlace al inicio) -->
     <a href="#inicio">
-        <img src="/home/dennise-gonzalez/Descargas/MARKETING ONLINE - Las mejores soluciones de Publicidad Online_files/61ef84ba49ceeca0bb7bb123_Logotipo_20TPP_403x-p-500.png" alt="TPP Hub Digital" style="max-height: 50px; margin-bottom: 20px;">
+        <img src="//home/dennise-gonzalez/Descargas/MARKETING ONLINE - Las mejores soluciones de Publicidad Online_files/logo_blanco.png" alt="TPP Hub Digital" style="max-height: 50px; margin-bottom: 20px;">
     </a>
 
     <!-- Línea separadora -->
