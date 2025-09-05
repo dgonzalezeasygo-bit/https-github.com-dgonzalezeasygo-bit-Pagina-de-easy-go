@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog - Easy Go</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Barra idéntica a la página principal -->
+  <header>
+    <div class="logo">
+      <img src="/home/dennise-gonzalez/Descargas/MARKETING ONLINE - Las mejores soluciones de Publicidad Online_files/61ef84ba49ceeca0bb7bb123_Logotipo TPP@3x.png" alt="Logo" class="logo-img"> <!-- tu logo -->
+    </div>
+
+    <nav class="menu">
+      <a href="file:///home/dennise-gonzalez/Documentos/Easy%20Go#servicios">Servicios</a>
+      <a href="file:///home/dennise-gonzalez/Documentos/Easy%20Go#quienes">¿Quiénes somos?</a>
+      <a href="blog.html" class="active">Blog</a>
+    </nav>
+
+    <a href="file:///home/dennise-gonzalez/Documentos/Easy%20Go#contacto" class="contact-btn">Contáctanos</a>
+  </header>
+
+  <!-- Aquí empezará el contenido del blog -->
+  <main>
+    <!-- Espacio vacío para artículos -->
+  </main>
+  <!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog - Easy Go</title>
+  <link rel="stylesheet" href="blog.css">
+</head>
+<body>
+  
+  </header>
+
+
+    <!-- 1 -->
+    <div class="blog-card">
+      <img src="/home/dennise-gonzalez/Descargas/19 articulos/Articulo 1" alt="SEO e Inteligencia Artificial">
+      <div class="blog-content">
+        <h3>SEO e Inteligencia Artificial: Una Alianza Poderosa</h3>
+        <p>Descubre cómo la inteligencia artificial está revolucionando el SEO. Aprende a integrar IA en tu estrategia digital con TPP y optimiza tu posicionamiento. <a href="#"></a></p>
+      </div>
+      <div class="blog-footer"><div class="line"></div><div class="social-icons"><a href="#">f</a><a href="#" class="linkedin">in</a></div></div>
+    </div>
+
+    <!-- 2 -->
+    <div class="blog-card">
+      <img src="/home/dennise-gonzalez/Descargas/19 articulos/Articulo 2.png" alt="Zero-Party Data">
+      <div class="blog-content">
+        <h3>El Futuro Sin Cookies: Cómo Aprovechar el Zero-Party Data</h3>
+        <p>Adapta tu marketing al futuro sin cookies con Zero-Party Data. TPP te ayuda a ofrecer experiencias personalizadas y éticas que construyen confianza y lealtad. <a href="#"></a></p>
+      </div>
+      <div class="blog-footer"><div class="line"></div><div class="social-icons"><a href="#">f</a><a href="#" class="linkedin">in</a></div></div>
+    </div>
+
+    <!-- 3 -->
+    <div class="blog-card">
+      <img src="/home/dennise-gonzalez/Descargas/19 articulos/Articulo 3.png" alt="Fidelización Digital">
+      <div class="blog-content">
+        <h3>Fidelización Digital: Convierte Clientes en Fans</h3>
+        <p>Convierte clientes en seguidores leales con estrategias digitales de fidelización basadas en confianza y personalización. Destaca tu marca con TPP. <a href="#"></a></p>
+      </div>
+      <div class="blog-footer"><div class="line"></div><div class="social-icons"><a href="#">f</a><a href="#" class="linkedin">in</a></div></div>
+    </div>
+
+    <!-- 4 -->
+    <div class="blog-card">
+      <img src="/home/dennise-gonzalez/Descargas/19 articulos/Articulo 4.png" alt="Guías y Tutoriales">
+      <div class="blog-content">
+        <h3>Guías y Tutoriales: Contenido de Alto Valor</h3>
+        <p>Aprovecha el contenido educativo: guías y tutoriales que generan visitas constantes. Crea contenido útil y posiciona tu marca en el sector con TPP. <a href="#"></a></p>
+      </div>
+      <div class="blog-footer"><div class="line"></div><div class="social-icons"><a href="#">f</a><a href="#" class="linkedin">in</a></div></div>
+    </div>
+
+    <!-- 5 -->
+    <div class="blog-card">
+      <img src="/home/dennise-gonzalez/Descargas/19 articulos/Articulo 5.png" alt="Contenido Evergreen">
+      <div class="blog-content">
+        <h3>Contenido Evergreen: Crea Tráfico Sostenible</h3>
+        <p>Descubre cómo el contenido evergreen puede impulsar tu visibilidad a largo plazo y asegura tráfico constante. ¡Transforma tu estrategia de contenido ahora! <a href="#"></a></p>
+      </div>
+      <div class="blog-footer"><div class="line"></div><div class="social-icons"><a href="#">f</a><a href="#" class="linkedin">in</a></div></div>
+    </div>
+
+    <!-- 6 -->
+    <div class="blog-card">
+      <img src="img/articulo6.jpg" alt="TikTok Ads 2024">
+      <div class="blog-content">
+        <h3>TikTok Ads: Guía Completa para Anunciantes en 2024</h3>
+        <p>¡Aprende a dominar TikTok Ads en 2024! Optimiza tu estrategia y alcanza resultados excepcionales. Lleva tu marca al siguiente nivel con TPP. <a href="#"></a></p>
+      </div>
+      <div class="blog-footer"><div class="line"></div><div class="social-icons"><a href="#">f</a><a href="#" class="linkedin">in</a></div></div>
+    </div>
+
+    <!-- 7 -->
+    <div class="blog-card">
+      <img src="img/articulo7.jpg" alt="Publicidad Nativa">
+      <div class="blog-content">
+        <h3>Publicidad Nativa: Conecta y Convierte</h3>
+        <p>Posiciona tu marca con contenido relevante y cautiva a tu audiencia de manera natural con publicidad nativa. ¡Lleva tu estrategia al siguiente nivel! <a href="#"></a></p>
+      </div>
+      <div class="blog-footer"><div class="line"></div><div class="social-icons"><a href="#">f</a><a href="#" class="linkedin">in</a></div></div>
+    </div>
+
+    <!-- 8 -->
+    <div class="blog-card">
+      <img src="img/articulo8.jpg" alt="IA e Influencers">
+      <div class="blog-content">
+        <h3>IA e Influencers: Una Alianza Perfecta</h3>
+        <p>Descubre la receta moderna para contenido viral y éxito en marketing al utilizar influencers e IA. Descubre cómo potenciar tu presencia digital con TPP. <a href="#"></a></p>
+      </div>
+      <div class="blog-footer"><div class="line"></div><div class="social-icons"><a href="#">f</a><a href="#" class="linkedin">in</a></div></div>
+    </div>
+
+    <!-- 9 -->
+    <div class="blog-card">
+      <img src="img/articulo9.jpg" alt="Marketing Viral">
+      <div class="blog-content">
+        <h3>Marketing Viral: Crea Campañas Inolvidables</h3>
+        <p>Descifra el código del marketing viral con TPP. Aprende las estrategias para diseñar campañas que se compartan y se conviertan en fenómenos memorables. <a href="#"></a></p>
+      </div>
+      <div class="blog-footer"><div class="line"></div><div class="social-icons"><a href="#">f</a><a href="#" class="linkedin">in</a></div></div>
+    </div>
+
+    <!-- 10 -->
+    <div class="blog-card">
+      <img src="/home/dennise-gonzalez/Descargas/19 articulos/Articulo 6.png" alt="Marketing Digital 5 Elementos">
+      <div class="blog-content">
+        <h3>Marketing Digital: 5 Elementos Clave</h3>
+        <p>Atrae, convierte y retiene clientes con estos 5 elementos clave del marketing digital en tu estrategia. Conoce lo necesario para alcanzar el éxito con TPP. <a href="#"></a></p>
+      </div>
+      <div class="blog-footer"><div class="line"></div><div class="social-icons"><a href="#">f</a><a href="#" class="linkedin">in</a></div></div>
+    </div>
+
+    <!-- 11 -->
+    <div class="blog-card">
+      <img src="img/articulo11.jpg" alt="Enfoque 360">
+      <div class="blog-content">
+        <h3>Integra un Enfoque 360 en tu Estrategia Digital</h3>
+        <p>Transforma tu estrategia de marketing digital con TPP al integrar un enfoque 360 a tu estrategia digital. Maximiza tu impacto y obtén resultados tangibles. <a href="#"></a></p>
+      </div>
+      <div class="blog-footer"><div class="line"></div><div class="social-icons"><a href="#">f</a><a href="#" class="linkedin">in</a></div></div>
+    </div>
+
+    <!-- 12 -->
+    <div class="blog-card">
+      <img src="img/articulo12.jpg" alt="Ecosistema digital">
+      <div class="blog-content">
+        <h3>Potencia el éxito con un ecosistema digital</h3>
+        <p>En un mundo cada vez más digitalizado, es crucial que pensemos estratégicamente en el ecosistema digital para alcanzar el éxito en nuestras organizaciones. <a href="#"></a></p>
+      </div>
+      <div class="blog-footer"><div class="line"></div><div class="social-icons"><a href="#">f</a><a href="#" class="linkedin">in</a></div></div>
+    </div>
+
+    <!-- 13 -->
+    <div class="blog-card">
+      <img src="img/articulo13.jpg" alt="Marcas Sostenibles">
+      <div class="blog-content">
+        <h3>Construyendo Marcas Sostenibles</h3>
+        <p>En el vertiginoso mundo del marketing y los negocios, las ventas exitosas no son fruto de la casualidad, sino del resultado de un proceso cuidadoso y estratégico. <a href="#"></a></p>
+      </div>
+      <div class="blog-footer"><div class="line"></div><div class="social-icons"><a href="#">f</a><a href="#" class="linkedin">in</a></div></div>
+    </div>
+
+    <!-- 14 -->
+    <div class="blog-card">
+      <img src="img/articulo14.jpg" alt="Analítica y KPIs">
+      <div class="blog-content">
+        <h3>Analítica y KPIs en Marketing Digital</h3>
+        <p>En el complejo proceso del marketing digital, hay que prestar atención al ritmo de las métricas de tráfico web. Los datos recolectados ofrecen visión del número de visitantes. <a href="#"></a></p>
+      </div>
+      <div class="blog-footer"><div class="line"></div><div class="social-icons"><a href="#">f</a><a href="#" class="linkedin">in</a></div></div>
+    </div>
+
+    <!-- 15 -->
+    <div class="blog-card">
+      <img src="/home/dennise-gonzalez/Descargas/19 articulos/Articulo 7.png" alt="Importancia de la analítica">
+      <div class="blog-content">
+        <h3>La importancia de la analítica en marketing</h3>
+        <p>En la era digital actual, las empresas se enfrentan a un desafío constante: destacar entre la multitud y alcanzar resultados tangibles en línea con datos sólidos y análisis precisos. <a href="#"></a></p>
+      </div>
+      <div class="blog-footer"><div class="line"></div><div class="social-icons"><a href="#">f</a><a href="#" class="linkedin">in</a></div></div>
+    </div>
+
+    <!-- 16 -->
+    <div class="blog-card">
+      <img src="img/articulo16.jpg" alt="Marketing para Startups">
+      <div class="blog-content">
+        <h3>Estrategias de Marketing para Startups</h3>
+        <p>El mundo empresarial está en constante evolución, y los startups se enfrentan a un desafío: destacar en un mercado saturado. El marketing digital es clave para impulsar el crecimiento. <a href="#"></a></p>
+      </div>
+      <div class="blog-footer"><div class="line"></div><div class="social-icons"><a href="#">f</a><a href="#" class="linkedin">in</a></div></div>
+    </div>
+
+    <!-- 17 -->
+    <div class="blog-card">
+      <img src="img/articulo17.jpg" alt="Consultoría Digital">
+      <div class="blog-content">
+        <h3>El Poder de la Consultoría en Marketing Digital</h3>
+        <p>La consultoría en marketing digital emerge como el catalizador clave para amplificar la presencia y consolidar marcas en el vasto mundo digital. <a href="#"></a></p>
+      </div>
+      <div class="blog-footer"><div class="line"></div><div class="social-icons"><a href="#">f</a><a href="#" class="linkedin">in</a></div></div>
+    </div>
+
+    <!-- 18 -->
+    <div class="blog-card">
+      <img src="img/articulo18.jpg" alt="Estrategia Digital Efectiva">
+      <div class="blog-content">
+        <h3>Cómo Crear una Estrategia Digital Efectiva</h3>
+        <p>En la era digital, una estrategia de marketing efectiva es fundamental para destacar y aprovechar las herramientas de marketing digital adaptadas al cambio. <a href="#"></a></p>
+      </div>
+      <div class="blog-footer"><div class="line"></div><div class="social-icons"><a href="#">f</a><a href="#" class="linkedin">in</a></div></div>
+    </div>
+
+    <!-- 19 -->
+    <div class="blog-card">
+      <img src="/home/dennise-gonzalez/Descargas/19 articulos/Articulo 8.png" alt="Tendencias 2022">
+      <div class="blog-content">
+        <h3>5 tendencias a tomar en cuenta en lo que queda del 2022</h3>
+        <p>Una tendencia es una corriente y la mejor forma de sobrevivir es no nadar en contra de ella. Identificarlas a tiempo es imprescindible en marketing. <a href="#"></a></p>
+      </div>
+      <div class="blog-footer"><div class="line"></div><div class="social-icons"><a href="#">f</a><a href="#" class="linkedin">in</a></div></div>
+    </div>
+
+  </section>
+</body>
+</html>
+
+<style>
+/*logo*/
+  .logo {
+    margin-left: 150px; /* mueve el logo a la derecha */
+    </style>
+    <style>
+    .btn-contacto {
+  float: right;
+  margin-right: 300px; /* aleja del borde derecho */
+  }
+/*Barra de inicio*/
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  background: #fff;
+}
+
+/* Barra fija */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: #fff;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Logo */
+.logo-img {
+  height: 40px;
+}
+
+/* Menú */
+.menu {
+  display: flex;
+  gap: 40px; /* separa los botones, puedes bajarlo a 25px si los quieres más juntos */
+}
+
+.menu a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  position: relative;
+}
+
+/* Línea naranja debajo */
+.menu a::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 3px;
+  background: #ff5722;
+  transition: width 0.3s;
+  margin: auto;
+  border-radius: 2px;
+}
+
+.menu a:hover::after,
+.menu a.active::after {
+  width: 100%;
+}
+
+/* Botón naranja */
+.contact-btn {
+  background: #ff5722;
+  color: #fff;
+  padding: 10px 25px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s;
+gap: 40px
+}
+
+.contact-btn:hover {
+  background: #e64a19;
+}
+
+/* Separar contenido del header fijo */
+main {
+  margin-top: 100px;
+}
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+}
+
+header {
+  padding: 20px 50px;
+}
+
+header h2 {
+  font-size: 32px;
+  font-weight: bold;
+  color: #333;
+  position: relative;
+  display: inline-block;
+}
+
+header h2::after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 4px;
+  background-color: #f15a29; /* Naranja */
+  margin-top: 5px;
+  border-radius: 2px;
+}
+
+.blog-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.blog-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  margin-bottom: 30px;
+  overflow: hidden;
+}
+
+.blog-card img {
+  width: 100%;
+  display: block;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+.blog-content {
+  padding: 15px 20px;
+}
+
+.blog-content h3 {
+  color: #444;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.blog-content p {
+  color: #666;
+  font-size: 14px;
+}
+
+.blog-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px 15px 20px;
+}
+
+.line {
+  flex: 1;
+  height: 4px;
+  background-color: #f15a29;
+  border-radius: 2px;
+  margin-right: 10px;
+}
+
+.social-icons a {
+  margin-left: 8px;
+  text-decoration: none;
+  font-size: 14px;
+  color: white;
+  background-color: #3b5998; /* Azul Facebook */
+  padding: 5px 10px;
+  border-radius: 4px;
+}
+
+.social-icons a.linkedin {
+  background-color: #0077b5; /* Azul LinkedIn */
+}
+
+/* Responsive: 2 columnas en desktop, 1 en móvil */
+@media (min-width: 768px) {
+  .blog-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+}
+
+</style>
+</body>
+</html>
+
