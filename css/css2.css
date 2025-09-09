@@ -1,0 +1,257 @@
+/*Barra de inicio*/
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  background: #fff;
+}
+
+/* Barra fija */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: #fff;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Logo */
+.logo-img {
+  height: 40px;
+}
+
+/* Menú */
+.menu {
+  display: flex;
+  gap: 40px; /* separa los botones, puedes bajarlo a 25px si los quieres más juntos */
+}
+
+.menu a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  position: relative;
+}
+
+/* Línea naranja debajo */
+.menu a::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 3px;
+  background: #ff5722;
+  transition: width 0.3s;
+  margin: auto;
+  border-radius: 2px;
+}
+
+.menu a:hover::after,
+.menu a.active::after {
+  width: 100%;
+}
+
+/* Botón naranja */
+.contact-btn {
+  background: #ff5722;
+  color: #fff;
+  padding: 10px 25px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s;
+gap: 40px
+}
+
+.contact-btn:hover {
+  background: #e64a19;
+}
+
+/* Separar contenido del header fijo */
+main {
+  margin-top: 100px;
+}
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+}
+
+header {
+  padding: 20px 50px;
+}
+
+header h2 {
+  font-size: 32px;
+  font-weight: bold;
+  color: #333;
+  position: relative;
+  display: inline-block;
+}
+
+header h2::after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 4px;
+  background-color: #f15a29; /* Naranja */
+  margin-top: 5px;
+  border-radius: 2px;
+}
+
+.blog-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.blog-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  margin-bottom: 30px;
+  overflow: hidden;
+}
+
+.blog-card img {
+  width: 100%;
+  display: block;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+.blog-content {
+  padding: 15px 20px;
+}
+
+.blog-content h3 {
+  color: #444;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.blog-content p {
+  color: #666;
+  font-size: 14px;
+}
+
+.blog-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px 15px 20px;
+}
+
+.line {
+  flex: 1;
+  height: 4px;
+  background-color: #f15a29;
+  border-radius: 2px;
+  margin-right: 10px;
+}
+
+.social-icons a {
+  margin-left: 8px;
+  text-decoration: none;
+  font-size: 14px;
+  color: white;
+  background-color: #3b5998; /* Azul Facebook */
+  padding: 5px 10px;
+  border-radius: 4px;
+}
+
+.social-icons a.linkedin {
+  background-color: #0077b5; /* Azul LinkedIn */
+}
+
+/* Responsive: 2 columnas en desktop, 1 en móvil */
+@media (min-width: 768px) {
+  .blog-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+}
+
+/*logo*/
+  .logo {
+    margin-left: 150px; /* mueve el logo a la derecha */
+    </style>
+    <style>
+    .btn-contacto {
+  float: right;
+  margin-right: 300px; /* aleja del borde derecho */
+  }
+/*Barra de inicio*/
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  background: #fff;
+}
+
+/* Barra fija */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: #fff;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Logo */
+.logo-img {
+  height: 40px;
+}
+
+/* Menú */
+.menu {
+  display: flex;
+  gap: 40px; /* separa los botones, puedes bajarlo a 25px si los quieres más juntos */
+}
+
+#whatsapp-logo {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 60px; /* Tamaño pequeño */
+  height: 60px;
+  z-index: 1000;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #25D366; /* color verde WhatsApp */
+  transition: transform 0.3s ease;
+}
+
+#whatsapp-logo img {
+  max-width: 70%;
+  max-height: 70%;
+}
+
+#whatsapp-logo:hover {
+  transform: scale(1.1);
+}
+/*logo*/
+  .logo {
+    margin-left: 150px; /* mueve el logo a la derecha */
+    </style>
+    <style>
+    .btn-contacto {
+  float: right;
+  margin-right: 300px; /* aleja del borde derecho */
+  }
