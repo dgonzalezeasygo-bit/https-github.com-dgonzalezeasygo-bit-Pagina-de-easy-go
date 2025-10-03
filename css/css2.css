@@ -1,0 +1,442 @@
+/* ========================================================================= */
+/* 1. ESTILOS GENERALES Y FONDO (BODY)                                       */
+/* ========================================================================= */
+/*Barra de inicio*/
+body {
+    /* Define la imagen de fondo */
+    background-image: url('../Imagenes/imagen0.png');
+
+    /* Mantiene la imagen fija mientras el usuario se desplaza */
+    background-attachment: fixed;
+
+    /* Posiciona la imagen en la esquina superior izquierda */
+    background-position: top left;
+
+    /* Evita que la imagen se repita */
+    background-repeat: no-repeat;
+
+    /* Ajusta el tamaño de la imagen para que se vea bien */
+    /* Puedes usar un porcentaje o un tamaño fijo en píxeles */
+    background-size: 50%;
+    
+}
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+.tu-clase {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 800; /* Para usar el peso de fuente de la imagen */
+}
+
+/* Estilos de body duplicados (inicio de blog/contacto) */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+}
+
+/* ========================================================================= */
+/* 2. BARRA DE NAVEGACIÓN (HEADER)                                           */
+/* ========================================================================= */
+
+/* Barra fija (Estilo 1) */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: #fff;
+  z-index: 1000;
+  box-shadow: 0 0px 0px rgba(0,0,0,0.1);
+}
+
+/* Logo */
+.logo-img {
+  height: 30px;
+  transform: translateX(130%);
+}
+
+/* Menú principal (Estilo 1) */
+.menu {
+  display: flex;
+  gap: 40px; /* separa los botones, puedes bajarlo a 25px si los quieres más juntos */
+}
+
+.menu a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  position: relative;
+}
+
+/* Línea naranja debajo (Estilo 1 de hover) */
+.menu a::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 5px;
+  background: #ff5722;
+  transition: width 0.3s;
+  margin: auto;
+  border-radius: 4px;
+}
+
+.menu a:hover::after,
+.menu a.active::after {
+  width: 100%;
+}
+
+/* Botón naranja (Estilo 1) */
+.contact-btn {
+  background: #ff5722;
+  color: #fff;
+  padding: 10px 25px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s;
+ transform: translateX(-95%);
+}
+
+.contact-btn:hover {
+  background: #e64a19;
+}
+
+/* Separar contenido del header fijo */
+main {
+  margin-top: 100px;
+}
+
+/* Estilos del menú de navegación (Estilo 2 - más elaborado) */
+.menu {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 8px; /* Espacio para la línea debajo del texto */
+}
+
+/* Línea inicial, pequeña y naranja (Estilo 2 de línea) */
+.menu a::after {
+  content: '';
+  display: block;
+  width: 25px; /* Ancho inicial de la línea */
+  height: 8px; /* Grosor de la línea */
+  background-color: #FF4F1F; /* Color naranja original */
+  border-radius: 50px;
+  position: absolute;
+  bottom: 0;
+  left: 0; /* Alinea la línea a la izquierda */
+  transition: width 0.3s ease, background-color 0.3s ease;
+}
+
+/* Efecto al pasar el cursor o hacer clic en cualquier enlace (Estilo 2 de hover/activo) */
+.menu a:hover::after,
+.menu a.active::after {
+  width: 100%; /* La barra se hace ancha */
+  background-color: #559942; /* Cambia a color verde */
+}
+
+/* Estilo específico para el enlace #blog */
+.menu a[href="#blog"] {
+  color: #FF4F1F;
+}
+
+/* ========================================================================= */
+/* 3. ESTILOS DE TÍTULOS DE SECCIÓN (BLOG/GENÉRICOS)                         */
+/* ========================================================================= */
+
+header {
+  padding: 20px 50px;
+}
+
+header h2 {
+  font-size: 32px;
+  font-weight: bold;
+  color: #333;
+  position: relative;
+  display: inline-block;
+}
+
+header h2::after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 4px;
+  background-color: #f15a29; /* Naranja */
+  margin-top: 5px;
+  border-radius: 2px;
+}
+
+/* ========================================================================= */
+/* 4. SECCIÓN BLOG                                                           */
+/* ========================================================================= */
+
+.blog-container {
+  max-width: 100px;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+.blog-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  margin-bottom: 30px;
+  overflow: hidden;
+}
+
+/*CONTENIDO DE BLOG*/
+.blog-header-container {
+    max-width: 1200px; /* Ancho máximo para el contenedor */
+    margin: 40px auto; /* Centra el contenedor y le da espacio vertical */
+    padding: 0 20px;
+    margin-bottom: 5px; /* Reduce el espacio debajo del título "BLOG" */
+}
+
+.blog-main-content {
+  padding-top: 20px; /* Reduce el espacio entre el header y el contenido del blog */
+}
+
+.blog-header-container h2 {
+    position: relative;
+    font-size: 2.5em;
+    font-weight: 900; /* Puedes usar 800 o 900 para un efecto más grueso */
+    color: #6d6d6d;
+    padding-bottom: -1px;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+.blog-header-container h2::after {
+    content: "";
+    display: block;
+    width: 25%; /* Ancho de la línea de degradado */
+    height: 4px; /* Grosor de la línea */
+    background: linear-gradient(to right, #559942, #f1c40f, #e67e22, #e74c3c);
+    border-radius: 2px;
+    margin: 10px 0; /* Espacio para separar del título y la descripción */
+    margin-top: -0.1%;
+}
+
+.blog-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 0;
+}
+
+.blog-card {
+    display: flex;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    flex-wrap: wrap;
+}
+
+.card-image-wrapper {
+    flex-basis: 100%;
+    max-width: 100%;
+   
+}
+
+.card-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    filter: brightness(0.7);
+}
+
+.card-content-wrapper {
+    flex-basis: 100%;
+    max-width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.card-text-content h3 {
+    font-size: 1.9em;
+    font-weight: 2000;
+    color: #757575;
+    margin-top: 0;
+    width: 150%;
+}
+
+.card-text-content p {
+    font-size: 0.9em;
+    color: #666;
+    line-height: 1.4;
+    width: 170%;
+}
+
+.card-text-content a {
+    color: #559942;
+    text-decoration: none;
+    font-weight: bold;
+    
+}
+
+.card-footer {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+.progress-bar {
+    width: 180%;
+    height: 100%;
+    background: linear-gradient(to right, #559942, #f1c40f, #e67e22, #e74c3c);
+    border-radius: 2px;
+
+}
+
+.progress-bar-container {
+    flex-grow: 1;
+    height: 10px;
+    background-color: #f0f0f0;
+    border-radius: 2px;
+    margin-right: 15px;
+    margin-top: -25%;
+}
+
+
+
+.social-icons-wrapper {
+    display: flex;
+    gap: 10px;
+    margin-top: -35%;
+    
+}
+
+.social-icon {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 25px;
+    height: 25px;
+    font-weight: bold;
+    border-radius: 4px;
+    color: white;
+    transform: translateX(1700%);
+}
+
+.social-icon.facebook {
+    background-color: #3b5998;
+}
+
+.social-icon.linkedin {
+    background-color: #0077b5;
+}
+
+/* ========================================================================= */
+/* 5. BOTÓN FLOTANTE DE WHATSAPP                                             */
+/* ========================================================================= */
+
+#whatsapp-logo {
+  position: fixed;
+  bottom: 20px;
+  right: 80px;
+  width: 110px; /* Tamaño pequeño */
+  height: 110px;
+  z-index: 1000;
+  cursor: pointer;
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease;
+}
+
+#whatsapp-logo img {
+  max-width: 70%;
+  max-height: 70%;
+}
+
+#whatsapp-logo:hover {
+  transform: scale(1.1);
+}
+
+/* ========================================================================= */
+/* 6. PIE DE PÁGINA (FOOTER)                                                 */
+/* ========================================================================= */
+
+/* Estilos de la etiqueta <footer> (Estilo 1) */
+footer {
+  background-color: #6aa438;
+  color: white;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+footer img {
+  max-height: 50px;
+  margin-bottom: 20px;
+}
+
+footer hr {
+  border: none;
+  border-top: 1px solid white;
+  width: 85%;
+  margin: 20px auto;
+}
+
+/* Estilos de la clase .footer (Estilo 2 - duplicado) */
+.footer {
+  background-color: #6aa438;
+  color: white;
+  text-align: center;
+  padding: 40px 20px;
+  margin-top: 40px; /* separa del contenido */
+}
+
+.footer-logo {
+  max-height: 50px;
+  margin-bottom: 20px;
+}
+
+.footer-line {
+  border: none;
+  border-top: 1px solid white;
+  width: 85%;
+  margin: 20px auto;
+}
+
+.hola {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.hola img {
+  width: 18px;
+  height: 18px;
+  margin-right: 8px;
+}
+
+/* Título de contacto en el footer/sección de contacto */
+.titulo-contactanos {
+  color: #4CAF50; /* Verde suave */
+}

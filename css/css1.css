@@ -1,0 +1,1162 @@
+/* ========================================================================= */
+/* 1. ESTRUCTURA Y RESET GENERALES                                           */
+/* ========================================================================= */
+/* Reset */
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: #fff;
+}
+
+/* --- ESTILO PARA QUE EL FOOTER SE QUEDE ABAJO --- */
+html, body {
+  height: 100%;        /* Que ocupe toda la pantalla */
+  margin: 0;           /* Quitamos márgenes */
+  display: flex;
+  flex-direction: column;
+}
+
+/* Separar contenido del header fijo */
+main {
+  margin-top: 100px;
+  flex: 1;             /* El contenido se expande y empuja el footer hacia abajo */
+}
+
+/* Estilos de Tipografía y Contenido General */
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  background: #fff;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+h1 {
+  font-size: 40px;
+  margin: 0;
+  font-weight: 300;
+  color: #555;
+}
+
+h1 span {
+  font-weight: 700;
+  color: #333;
+}
+
+.subtexto {
+  color: #666;
+  font-size: 20px;
+  max-width: 600px;
+  margin: auto;
+}
+
+.error {
+  color: red;
+  font-size: 13px;
+}
+
+/* ========================================================================= */
+/* 2. BARRA DE NAVEGACIÓN (HEADER)                                           */
+/* ========================================================================= */
+
+/* Barra fija */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: #fff;
+  z-index: 1000;
+  box-shadow: 0 0px 0px rgba(0,0,0,0.1);
+}
+
+/* Logo */
+.logo-img {
+  height: 30px;
+}
+
+/* Barra de navegación */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  margin-left: 150px; /* mueve el logo a la derecha */
+}
+
+.logo-placeholder {
+  width: 40px;
+  height: 40px;
+  background-color: #ccc;
+  border-radius: 5px;
+  margin-right: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 10px;
+  color: #555;
+}
+
+/* Estilos del menú de navegación */
+.menu {
+  display: flex;
+  gap: 40px; /* separa los botones, puedes bajarlo a 25px si los quieres más juntos */
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  position: relative;
+  overflow: hidden; 
+  padding-bottom: 8px; /* Espacio para la línea debajo del texto */
+}
+
+/* Línea naranja debajo (Estilo original más simple) */
+.menu a::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 3px;
+  background: #ff5722;
+  transition: width 0.3s;
+  margin: auto;
+  border-radius: 2px;
+}
+
+.menu a:hover::after,
+.menu a.active::after {
+  width: 100%;
+}
+
+/* Línea inicial pequeña y naranja, alineada a la izquierda (Estilo más complejo) */
+.menu a::after {
+  content: '';
+  display: block;
+  width: 25px; 
+  height: 8px;
+  background-color: #FF4F1F; /* Color naranja original */
+  border-radius: 50px;
+  position: absolute;
+  bottom: 0;
+  left: 0; /* Alinea la línea a la izquierda */
+  transition: width 0.3s ease, background-color 0.3s ease;
+}
+
+/* Efecto al pasar el cursor o hacer clic (Cambia a verde) */
+.menu a:hover::after,
+.menu a.active::after {
+  width: 100%; /* La barra se hace ancha */
+  background-color: #559942; /* Cambia a color verde */
+}
+
+nav a::after {
+  content: '';
+  display: block;
+  width: 20px;
+  height: 5px;
+  background-color: #FF4F1F;
+  border-radius: 50px;
+  margin: 5px auto 0 auto;
+}
+
+/* Botón naranja (Estilo 1) */
+.contact-btn {
+  background: #ff5722;
+  color: #fff;
+  padding: 10px 25px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.contact-btn:hover {
+  background: #e64a19;
+}
+
+/* Botón de contacto (Estilo 2) */
+.btn-contacto {
+  background-color: #FF4F1F;
+  color: white;
+  padding: 10px 25px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: bold;
+  float: right;
+  margin-right: 150px; /* aleja del borde derecho */
+}
+
+.btn-contacto a {
+  color: #fff;
+  text-decoration: none;
+}
+
+
+/* ========================================================================= */
+/* 3. SECCIÓN DE HÉROE / CONTENIDO PRINCIPAL                                 */
+/* ========================================================================= */
+
+.contenido {
+  margin-top: 50px;
+}
+
+.icon-placeholder {
+  width: 80px;
+  height: 80px;
+  background-color: #ccc;
+  border-radius: 10px;
+  margin: 0 auto 20px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #555;
+  font-size: 10px;
+}
+
+/* Barra de color degradado debajo del título principal */
+.barra-color {
+  display: flex;
+  height: 10px;
+  margin: 30px auto;
+  max-width: 800px;
+}
+
+.barra-color div {
+  flex: 1;
+}
+
+.verde-oscuro { background-color: #4CAF50; }
+.verde-claro  { background-color: #8BC34A; }
+.amarillo     { background-color: #FFEB3B; }
+.naranja      { background-color: #FF9800; }
+.rojo         { background-color: #FF5722; }
+
+
+/* ========================================================================= */
+/* 4. SECCIÓN SERVICIOS                                                      */
+/* ========================================================================= */
+#servicios {
+  padding: 60px 20px;
+  background-color: #f9f9f9;
+}
+
+.titulo-servicios {
+  font-size: 40px;
+  color: #2c3e50;
+  margin-bottom: 40px;
+}
+
+.contenedor-servicios {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.tarjeta-servicio {
+  background-color: #fff;
+  border-radius: 15px;
+  padding: 30px 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.07);
+  transition: transform 0.3s ease;
+  text-align: center;
+}
+
+.tarjeta-servicio:hover {
+  transform: translateY(-5px);
+}
+
+.tarjeta-servicio img {
+  width: 70px;
+  height: auto;
+  margin-bottom: 15px;
+}
+
+.tarjeta-servicio h3 {
+  font-size: 20px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.tarjeta-servicio p {
+  color: #666;
+  font-size: 14px;
+  min-height: 60px;
+  margin-bottom: 15px;
+}
+
+.tarjeta-servicio a {
+  display: inline-block;
+  text-decoration: none;
+  color: #FF4F1F;
+  font-weight: bold;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+
+/* ========================================================================= */
+/* 5. SECCIÓN QUIÉNES SOMOS                                                  */
+/* ========================================================================= */
+
+/* Estilo exclusivo para la sección "¿Quiénes somos?" (quienes-somos-tpp) */
+.quienes-somos-tpp {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  padding: 50px 20px;
+  background: #fff;
+}
+
+.qs-contenido {
+  flex: 1 1 00px;
+  max-width: 600px;
+}
+
+.qs-contenido h2 {
+  font-size: 2rem;
+  color: #222;
+  margin-bottom: 20px;
+  max-width: 400px;
+}
+
+.qs-caja-texto {
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.75rem;
+  line-height: 1.1;
+  color: #333;
+  text-align: left;
+  padding: 20px;
+}
+
+.qs-imagen {
+  flex: 1 1 400px;
+  max-width: 600px;
+  text-align: center;
+}
+
+.qs-imagen img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Versión alternativa/móvil de Quiénes Somos (quienes-somos) */
+.quienes-somos {
+  padding: 1rem 1rem;
+  text-align: center;
+}
+
+.quienes-somos h2 {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #222;
+  margin-bottom: 1rem;
+}
+
+.contenido-qs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.texto-qs {
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 22px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  max-width: 200px;
+  text-align: left;
+  flex: 1;
+}
+
+.texto-qs p {
+  margin-bottom: 1rem;
+  line-height: 1.6;
+  font-size: 9px;
+  color: #333;
+}
+
+.mapa-qs img {
+  max-width: 140px;
+  height: auto;
+  display: block;
+}
+
+@media (max-width: 100px) {
+  .contenido-qs {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .mapa-qs img {
+    max-width: 140%;
+  }
+
+  .texto-qs {
+    max-width: 100%;
+  }
+}
+
+
+/* ========================================================================= */
+/* 6. SECCIÓN MARCAS (CARRUSEL)                                              */
+/* ========================================================================= */
+.marcas {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.marcas-titulo {
+  color: #70AD47;                      /* Color verde como el de tu imagen */
+  font-family: 'Segoe UI', sans-serif; /* O la fuente que uses en tu sitio */
+  font-weight: 400;                    /* 400 = normal, no negrita */
+  font-size: 2rem;                   /* Más grande que antes */
+  text-transform: uppercase;           /* Mayúsculas */
+  margin: 0 auto;
+}
+
+/* ---------- CARRUSEL DE LOGOS ---------- */
+.slider-logos {
+  overflow: hidden;
+  white-space: nowrap;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px 0;
+}
+
+.logos-track {
+  display: inline-flex;
+  animation: scroll-logos 40s linear infinite; /* más lento */
+  gap: 80px;
+}
+
+.logos-track img {
+  height: 100px; /* más grande */
+  opacity: 0.5;
+  filter: grayscale(100%); /* color gris */
+  transition: transform 0.3s, filter 0.3s, opacity 0.3s;
+}
+
+.logos-track img:hover {
+  transform: scale(1.08);
+  opacity: 1;
+  filter: grayscale(0%); /* vuelve a color al pasar el mouse */
+}
+
+@keyframes scroll-logos {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.slider-logos:hover .logos-track {
+  animation-play-state: paused;
+}
+
+
+/* ========================================================================= */
+/* 7. SECCIÓN BLOG                                                           */
+/* ========================================================================= */
+
+.blog-header-container {
+    max-width: 1200px; /* Ancho máximo para el contenedor */
+    margin: 40px auto; /* Centra el contenedor y le da espacio vertical */
+    padding: 0 20px;
+    margin-bottom: 5px; /* Reduce el espacio debajo del título "BLOG" */
+}
+
+.blog-header-container h2 {
+    position: relative;
+    font-size: 2.5em;
+    font-weight: 900; /* Puedes usar 800 o 900 para un efecto más grueso */
+    color: #6d6d6d;
+    padding-bottom: -1px;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+.blog-header-container h2::after {
+    content: "";
+    display: block;
+    width: 25%; /* Ancho de la línea de degradado */
+    height: 4px; /* Grosor de la línea */
+    background: linear-gradient(to right, #559942, #f1c40f, #e67e22, #e74c3c);
+    border-radius: 2px;
+    margin: 10px 0; /* Espacio para separar del título y la descripción */
+    margin-top: -0.1%;
+}
+
+.blog-main-content {
+  padding-top: 20px; /* Reduce el espacio entre el header y el contenido del blog */
+}
+
+.blog-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 0;
+}
+
+.blog-card {
+    display: flex;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    flex-wrap: wrap;
+}
+
+.card-image-wrapper {
+    flex-basis: 100%;
+    max-width: 100%;
+   
+}
+
+.card-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    filter: brightness(0.7);
+}
+
+.card-content-wrapper {
+    flex-basis: 100%;
+    max-width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.card-text-content h3 {
+    font-size: 1.9em;
+    font-weight: 2000;
+    color: #757575;
+    margin-top: 0;
+    width: 150%;
+}
+
+.card-text-content p {
+    font-size: 0.9em;
+    color: #666;
+    line-height: 1.4;
+    width: 170%;
+}
+
+.card-text-content a {
+    color: #559942;
+    text-decoration: none;
+    font-weight: bold;
+    
+}
+
+.card-footer {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+.progress-bar {
+    width: 180%;
+    height: 100%;
+    background: linear-gradient(to right, #559942, #f1c40f, #e67e22, #e74c3c);
+    border-radius: 2px;
+
+}
+
+.progress-bar-container {
+    flex-grow: 1;
+    height: 10px;
+    background-color: #f0f0f0;
+    border-radius: 2px;
+    margin-right: 15px;
+    margin-top: -25%;
+}
+
+.social-icons-wrapper {
+    display: flex;
+    gap: 10px;
+    margin-top: -35%;
+    
+}
+
+.social-icon {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 25px;
+    height: 25px;
+    font-weight: bold;
+    border-radius: 4px;
+    color: white;
+    transform: translateX(1700%);
+}
+
+.social-icon.facebook {
+    background-color: #3b5998;
+}
+
+.social-icon.linkedin {
+    background-color: #0077b5;
+}
+
+/* ========================================================================= */
+/* 8. SECCIÓN CONTACTO / FORMULARIO                                          */
+/* ========================================================================= */
+
+.contact-section {
+  padding: 40px;
+}
+
+.contact-section h2 {
+  text-align: center;
+  color: green;
+  margin-bottom: 30px;
+}
+
+.titulo-contactanos {
+  color: #4CAF50; /* Verde suave */
+}
+
+.contact-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Caja de información/países */
+.contact-box {
+  background: #fff;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0px 2px 6px rgba(0,0,0,0.1);
+  flex: 1;
+  max-width: 800px;
+}
+
+/* Contenedor y Formulario de Contacto (Duplicado de estilos) */
+.container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
+
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  flex: 1;
+}
+
+.card h2 {
+  margin-top: 0;
+}
+
+/* Estilos de la información de contacto de países */
+.contact-info h3 {
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+
+.contact-info p {
+  display: flex;
+  align-items: center;
+  margin: 5px 0;
+  font-size: 14px;
+}
+
+.contact-info img {
+  width: 18px;
+  height: 18px;
+  margin-right: 8px;
+}
+
+.pais {
+  margin-bottom: 20px;
+}
+
+.pais h3 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.pais a {
+  text-decoration: none;
+  color: #333;
+  display: block;
+  margin: 5px 0;
+}
+
+.pais a:hover {
+  color: #3ca23c;
+}
+
+.guatemala { color: #FF5722; }
+.elsalvador { color: orange; }
+.honduras { color: #FF9800; }
+.nicaragua { color: #FFD54F; }
+.costarica { color: #00AEEF; }
+.panama { color: purple; }
+.chile { color: darkblue; }
+
+/* Estilos para el formulario */
+.contact-form {
+  max-width: 500px;
+  width: 100%;
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form label {
+  margin-top: 10px;
+  margin-bottom: 4px;
+  color: green;
+}
+
+.contact-form input,
+.contact-form textarea,
+form input, form textarea {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 8px;
+  margin-bottom: 10px;
+  font-size: 14px;
+  width: 100%;.contact-section {
+  padding: 40px;
+}
+
+.contact-section h2 {
+  text-align: center;
+  color: green;
+  margin-bottom: 30px;
+}
+
+.titulo-contactanos {
+  color: #4CAF50; /* Verde suave */
+}
+
+.contact-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Caja de información/países */
+.contact-box {
+  background: #fff;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0px 2px 6px rgba(0,0,0,0.1);
+  flex: 1;
+  max-width: 800px;
+}
+
+/* Contenedor y Formulario de Contacto (Duplicado de estilos) */
+.container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
+
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  flex: 1;
+}
+
+.card h2 {
+  margin-top: 0;
+}
+
+/* Estilos de la información de contacto de países */
+.contact-info h3 {
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+
+.contact-info p {
+  display: flex;
+  align-items: center;
+  margin: 5px 0;
+  font-size: 14px;
+}
+
+.contact-info img {
+  width: 18px;
+  height: 18px;
+  margin-right: 8px;
+}
+
+.pais {
+  margin-bottom: 20px;
+}
+
+.pais h3 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.pais a {
+  text-decoration: none;
+  color: #868686;
+  display: block;
+  margin: 5px 0;
+}
+
+.pais a:hover {
+  color: #3ca23c;
+}
+
+.guatemala { color: red; }
+.elsalvador { color: orange; }
+.honduras { color: green; }
+.nicaragua { color: limegreen; }
+.costarica { color: blue; }
+.panama { color: purple; }
+.chile { color: darkblue; }
+
+/* Estilos para el formulario */
+.contact-form {
+  max-width: 500px;
+  width: 100%;
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form label {
+  margin-top: 10px;
+  margin-bottom: 4px;
+  color: green;
+}
+
+.contact-form input,
+.contact-form textarea,
+form input, form textarea {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 8px;
+  margin-bottom: 10px;
+  font-size: 14px;
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus,
+form input:focus, form textarea:focus {
+  border-color: green;
+  outline: none;
+}
+
+.contact-form input:invalid,
+.contact-form textarea:invalid {
+  border-color: rgb(83, 81, 81);
+}
+
+.contact-form button,
+form button {
+  background: green;
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  padding: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 20px;
+  background: #3ca23c;
+  font-size: 16px;
+}
+
+.contact-form button:hover,
+form button:hover {
+  background: darkgreen;
+  background: #2e7d32;
+}
+
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus,
+form input:focus, form textarea:focus {
+  border-color: green;
+  outline: none;
+}
+
+.contact-form input:invalid,
+.contact-form textarea:invalid {
+  border-color: rgb(97, 94, 94);
+}
+
+.contact-form button,
+form button {
+  background: green;
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  padding: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 20px;
+  background: #3ca23c;
+  font-size: 16px;
+}
+
+.contact-form button:hover,
+form button:hover {
+  background: darkgreen;
+  background: #2e7d32;
+}
+
+/* Logo de WhatsApp fijo */
+#whatsapp-logo {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 105px; /* Tamaño pequeño */
+  height: 105px;
+  z-index: 1000;
+  cursor: pointer;
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease;
+}
+
+#whatsapp-logo img {
+  max-width: 70%;
+  max-height: 70%;
+}
+
+#whatsapp-logo:hover {
+  transform: scale(1.1);
+}
+
+/* ========================================================================= */
+/* 9. PIE DE PÁGINA (FOOTER)                                                 */
+/* ========================================================================= */
+
+footer {
+  background-color: #6aa438;
+  color: white;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+footer img {
+  max-height: 50px;
+  margin-bottom: 20px;
+}
+
+footer hr {
+  border: none;
+  border-top: 1px solid white;
+  width: 85%;
+  margin: 20px auto;
+}
+
+.footer {
+  background-color: #6aa438;
+  color: white;
+  text-align: center;
+  padding: 40px 20px;
+  margin-top: 40px; /* separa del contenido */
+}
+
+.footer-logo {
+  max-height: 50px;
+  margin-bottom: 20px;
+}
+
+.footer-line {
+  border: none;
+  border-top: 1px solid white;
+  width: 85%;
+  margin: 20px auto;
+}
+
+.hola {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.hola img {
+  width: 18px;
+  height: 18px;
+  margin-right: 8px;
+}
+/* ========================================================================= */
+/* 10. RESPONSIVE DESIGN                                                     */
+/* ========================================================================= */
+
+/* Tablets */
+@media (max-width: 1024px) {
+  header {
+    padding: 15px 20px;
+  }
+
+  .logo {
+    margin-left: 0; /* quita el margen grande */
+  }
+
+  .menu {
+    gap: 20px;
+  }
+
+  .contenedor-servicios {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+
+  .qs-contenido,
+  .qs-imagen {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .card-content-wrapper {
+    max-width: 100%;
+  }
+}
+
+/* Celulares */
+@media (max-width: 600px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+
+  .menu {
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 10px;
+  }
+
+  .btn-contacto {
+    margin-right: 0;
+    float: none;
+  }
+
+  h1 {
+    font-size: 28px;
+  }
+
+  .titulo-servicios {
+    font-size: 28px;
+  }
+
+  .qs-contenido h2 {
+    font-size: 1.5rem;
+    max-width: 100%;
+  }
+
+  .qs-caja-texto {
+    font-size: 0.9rem;
+  }
+
+  .mapa-qs img {
+    max-width: 100%;
+  }
+
+  .blog-card {
+    flex-direction: column;
+  }
+
+  .card-text-content h3,
+  .card-text-content p {
+    width: 100%;
+  }
+
+  .progress-bar {
+    width: 100%;
+  }
+
+  .social-icon {
+    transform: none;
+  }
+
+  .contact-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .contact-box,
+  .contact-form {
+    max-width: 100%;
+  }
+
+  footer,
+  .footer {
+    padding: 20px 10px;
+  }
+}

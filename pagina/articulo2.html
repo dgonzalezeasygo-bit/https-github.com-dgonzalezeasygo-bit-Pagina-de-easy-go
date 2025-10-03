@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog - Easy Go</title>
+  <link rel="stylesheet" href="../css/articulo1.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header>
+    <div class="logo">
+      <a href="../index.html#carrusel">
+      <img src="../Imagenes/imagen1.png" alt="Logo" class="logo-img">
+      </a>
+      </div>
+
+    <nav class="menu">
+      <a href="../index.html#servicios">Servicios</a>
+      <a href="../index.html#quienes">¿Quiénes somos?</a>
+      <a href="pagina/blog.html" class="active">Blog</a>
+    </nav>
+
+    <a href="../index.html#contactanos" class="contact-btn">Contáctanos</a>
+  </header>
+
+<div class="containerr">
+        <main class="article-column">
+            <div class="article-header">
+             
+                <img src="../Imagenes/1313.png" alt="El futuro sin cookies" class="main-image">
+              <div class="date"> 
+                
+                <p class="date">Abril 2025</p>
+                </div>
+                        <div class="progress-bar-container">
+                    <div class="progress-bar"></div>
+                </div>
+            </div>
+  
+<div class="article-content">
+    <h1 class="main-title">El futuro sin cookies: cómo aprovechar el Zero-Party Data</h1>
+
+    <p>Con la eliminación progresiva de las **cookies de terceros** y el aumento de regulaciones de privacidad, las marcas necesitan nuevas formas de conocer a sus audiencias. En este contexto, el **Zero-Party Data** surge como una alternativa ética y eficaz para personalizar experiencias sin comprometer la privacidad del usuario.</p>
+    
+    <h2 class="sub-title">¿Qué es el Zero-Party Data?</h2>
+    <p>El Zero-Party Data son los **datos que un cliente comparte intencionada y proactivamente** con una marca. Esto incluye centros de preferencias, historial de compras, intereses, intención de compra y datos demográficos que el usuario proporciona directamente. Al eliminarse las cookies de terceros, las marcas necesitan datos fiables y consentidos que fortalezcan la confianza y permita una personalización más relevante.</p>
+
+    <h2 class="sub-title">Ventajas clave del Zero-Party Data</h2>
+    
+    <h3 class="list-title">Cumplimiento con regulaciones de privacidad</h3>
+    <p>A diferencia de las cookies de terceros, el Zero-Party Data se obtiene de forma directa y transparente, cumpliendo con normativas como el **GDPR** (General Data Protection Regulation) y el **CCPA** (California Consumer Privacy Act) que exigen consentimiento explícito.</p>
+
+    <h3 class="list-title">Mayor confianza y lealtad del consumidor</h3>
+    <p>Cuando los consumidores sienten que una marca respeta su privacidad y solo utiliza los datos que ellos mismos proporcionan, es más probable que desarrollen una relación de confianza y lealtad a largo plazo. Al provenir directamente del usuario, el Zero-Party Data permite ofrecer experiencias personalizadas, lo que mejora la efectividad del marketing y eleva las tasas de conversión permitiendo segmentar de manera más efectiva y precisión en la entrega de anuncios, promociones y contenido.</p>
+
+    
+    <h2 class="sub-title">Estrategias para recopilar Zero-Party Data</h2>
+    <p>Para que el Zero-Party Data sea efectivo, las marcas deben crear estrategias de recopilación que sean atractivas y que den valor al consumidor. Formas de hacerlo:</p>
+
+    <h3 class="list-title">Encuestas y cuestionarios interactivos</h3>
+    <p>Las encuestas con preguntas personalizadas permiten recopilar datos directos de forma efectiva y ofrecen una experiencia interactiva que fortalece la relación con el consumidor. Para motivar a los usuarios a compartir sus datos, las marcas deben ofrecer beneficios como descuentos, acceso anticipado o contenido exclusivo, dando valor claro a su participación.</p>
+
+    <h3 class="list-title">Gamificación</h3>
+    <p>La gamificación es una forma innovadora de involucrar a los usuarios y recopilar datos de manera divertida. Trivias, concursos y otros juegos interactivos permiten que las marcas obtengan información mientras brindan una experiencia entretenida y memorable.</p>
+
+    <h3 class="list-title">Preferencias de comunicación</h3>
+    <p>Permitir que los usuarios elijan cómo desean recibir la información (por correo electrónico, SMS, etc.) no solo mejora la experiencia del usuario, sino que también proporciona datos útiles sobre sus comportamientos de comunicación.</p>
+
+    <p>El futuro del marketing digital es más ético, transparente y centrado en el consumidor. El Zero-Party Data ofrece una oportunidad única para que las marcas se adapten al fin de las cookies de terceros, al tiempo que cumplen con las regulaciones de privacidad y fortalecen la confianza del consumidor.</p>
+    
+        </main>
+
+        <aside class="form-column">
+            <h2 class="form-title">CONTÁCTANOS</h2>
+            <form id="contactForm" onsubmit="return validateForm()">
+                 <form action="guardar2.php" method="post">
+          <label for="nombre">Nombre completo</label>
+          <input type="text" name="Nombre completo" placeholder="Nombre completo" required>
+
+          <label for="correo">Correo electrónico</label>
+          <input type="text" name="Correo electrónico" placeholder="Ingresa tu correo electrónico" required>
+
+          <label for="telefono">Número de teléfono</label>
+          <input type="text"  name="Número de teléfono" placeholder="Número de teléfono" required>
+
+          <label for="empresa">Empresa para la que laboras</label>
+          <input type="text"  name="Empresa para la que laboras" placeholder="Empresa para la que laboras" required>
+
+          <label for="mensaje">Mensaje</label>
+          <textarea id="mensaje" name="mensaje" placeholder="Escribe tu mensaje" required></textarea>
+
+                <button type="submit" class="send-button">ENVIAR</button>
+            </form>
+        </aside>
+
+        <div class="social-icons">
+            <a href="https://www.facebook.com/tppemarketingCA" target="_blank">
+                <img src="../Imagenes/imagen14.png" alt="Facebook">
+            </a>
+            
+            <a href="https://www.linkedin.com/company/tppemarketing/" target="_blank">
+                <img src="../Imagenes/imagen13.png" alt="LinkedIn">
+            </a>
+        </div>
+</div>
+
+<footer class="footer-tpp">
+    <div class="logo-section">
+             <a href="../index.html#carrusel">
+        <img src="../Imagenes/imagen35.png" alt="TPP Hub Digital Logo" class="logo-image">
+             </a>
+    </div>
+    <hr class="footer-line">
+    <div class="social-section">
+        <p>Conoce más de nosotros en nuestras redes sociales</p>
+    </div>
+</footer>
+
+<script>
+    function validateForm() {
+        const form = document.getElementById('contactForm');
+        let isValid = true;
+
+        // Iterar sobre todos los elementos de entrada con el atributo 'required'
+        form.querySelectorAll('input[required], textarea[required]').forEach(input => {
+            if (input.value.trim() === '') {
+                // Si el campo está vacío, añadir la clase 'error' (borde rojo)
+                input.classList.add('error');
+                isValid = false;
+            } else {
+                // Si el campo tiene valor, remover la clase 'error'
+                input.classList.remove('error');
+            }
+        });
+
+        // Si no es válido, detenemos el envío del formulario
+        if (!isValid) {
+            alert('Por favor, completa todos los campos obligatorios antes de enviar.');
+        }
+        
+        return isValid;
+    }
+</script>
+</body>
+</html>

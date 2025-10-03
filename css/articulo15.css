@@ -1,0 +1,241 @@
+/*Barra de inicio*/
+body {
+    /* Define la imagen de fondo */
+    background-image: url('../Imagenes/imagen0.png');
+
+    /* Mantiene la imagen fija mientras el usuario se desplaza */
+    background-attachment: fixed;
+
+    /* Posiciona la imagen en la esquina superior izquierda */
+    background-position: top left;
+
+    /* Evita que la imagen se repita */
+    background-repeat: no-repeat;
+
+    /* Ajusta el tamaño de la imagen para que se vea bien */
+    /* Puedes usar un porcentaje o un tamaño fijo en píxeles */
+    background-size: 50%;
+    
+}
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+.tu-clase {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 800; /* Para usar el peso de fuente de la imagen */
+}
+
+
+/* Barra fija */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: #fff;
+  z-index: 1000;
+  box-shadow: 0 0px 0px rgba(0,0,0,0.1);
+}
+
+/* Logo */
+.logo-img {
+  height: 30px;
+   transform: translateX(130%);
+}
+
+/* Menú */
+.menu {
+  display: flex;
+  gap: 40px; /* separa los botones, puedes bajarlo a 25px si los quieres más juntos */
+}
+
+.menu a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  position: relative;
+}
+
+/* Línea naranja debajo */
+.menu a::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 5px;
+  background: #ff5722;
+  transition: width 0.3s;
+  margin: auto;
+  border-radius: 4px;
+}
+
+.menu a:hover::after,
+.menu a.active::after {
+  width: 100%;
+}
+
+/* Botón naranja */
+.contact-btn {
+  background: #ff5722;
+  color: #fff;
+  padding: 10px 25px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s;
+   transform: translateX(-95%);
+
+}
+
+.contact-btn:hover {
+  background: #e64a19;
+}
+
+/* Separar contenido del header fijo */
+/* Estilos del menú de navegación */
+.menu {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 8px; /* Espacio para la línea debajo del texto */
+}
+
+/* Línea inicial, pequeña y naranja */
+.menu a::after {
+  content: '';
+  display: block;
+  width: 25px; /* Ancho inicial de la línea */
+  height: 8px; /* Grosor de la línea */
+  background-color: #FF4F1F; /* Color naranja original */
+  border-radius: 50px;
+  position: absolute;
+  bottom: 0;
+  left: 0; /* Alinea la línea a la izquierda */
+  transition: width 0.3s ease, background-color 0.3s ease;
+}
+
+/* Efecto al pasar el cursor o hacer clic en cualquier enlace */
+.menu a:hover::after,
+.menu a.active::after {
+  width: 100%; /* La barra se hace ancha */
+  background-color: #559942; /* Cambia a color verde */
+}
+
+/* Mantener el color del texto de "Blog" en naranja por defecto si es necesario */
+.menu a[href="#blog"] {
+  color: #FF4F1F;
+}
+main {
+  margin-top: 100px;
+}
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+}
+
+header {
+  padding: 20px 50px;
+}
+
+header h2 {
+  font-size: 32px;
+  font-weight: bold;
+  color: #333;
+  position: relative;
+  display: inline-block;
+}
+
+header h2::after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 4px;
+  background-color: #f15a29; /* Naranja */
+  margin-top: 5px;
+  border-radius: 2px;
+}
+
+.blog-container {
+  max-width: 100px;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+.blog-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  margin-bottom: 30px;
+  overflow: hidden;
+}
+
+/*CONTENIDO DE BLOG*/
+.blog-header-container {
+    max-width: 1200px; /* Ancho máximo para el contenedor */
+    margin: 40px auto; /* Centra el contenedor y le da espacio vertical */
+    padding: 0 20px;
+    margin-bottom: 0;
+}
+.blog-main-content {
+  padding-top: 20px; /* Reduce el espacio entre el header y el contenido del blog */
+}
+
+.blog-header-container {
+  margin-bottom: 5px; /* Reduce el espacio debajo del título "BLOG" */
+}
+.blog-header-container h2 {
+    position: relative;
+    font-size: 2.5em;
+    font-weight: 900; /* Puedes usar 800 o 900 para un efecto más grueso */
+    color: #6d6d6d;
+    padding-bottom: -1px;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+.blog-header-container h2::after {
+    content: "";
+    display: block;
+    width: 25%; /* Ancho de la línea de degradado */
+    height: 4px; /* Grosor de la línea */
+    background: linear-gradient(to right, #559942, #f1c40f, #e67e22, #e74c3c);
+    border-radius: 2px;
+    margin: 10px 0; /* Espacio para separar del título y la descripción */
+    margin-top: -0.1%;
+}
+
+.blog-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 0;
+}
+
+.blog-card {
+    display: flex;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    flex-wrap: wrap;
+}

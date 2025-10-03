@@ -1,0 +1,404 @@
+/*
+  =======================================================
+  1. CONFIGURACIÓN GENERAL, FONDO Y LAYOUT PRINCIPAL
+  =======================================================
+*/
+body {
+    /* Fuente Poppins y Margen */
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    
+    /* Espaciado superior para dejar espacio al encabezado fijo */
+    padding-top: 100px; 
+    
+    /* Color de fondo y patrón sutil */
+    background-color: #f5f5f5; 
+    
+    /* DEFINICIÓN DE MÚLTIPLES FONDOS: Derecha (20%), Izquierda (20%), y Patrón de puntos */
+    background-image: 
+        url('../Imagenes/imagen100.png'),      /* Fondo 1: Derecha (20%) */
+        url('../Imagenes/imagen0.png'),    /* Fondo 2: Izquierda (20%) */
+        url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200"><circle cx="100" cy="100" r="2" fill="%23dcdcdc" opacity="0.7"/></svg>'); 
+
+    background-position: 
+        top right, /* Posición para la imagen derecha */
+        top left,  /* Posición para la imagen izquierda */
+        0 0;       /* Posición para el patrón de puntos */
+
+    background-size: 
+        20%,      /* Tamaño para la imagen de la derecha */
+        20%,      /* Tamaño para la imagen de la izquierda */
+        auto;     /* Tamaño para el patrón de puntos */
+
+    background-repeat: no-repeat, no-repeat, repeat; /* No repetir las imágenes grandes, repetir el patrón */
+    background-attachment: fixed; /* Mantiene todos los fondos fijos */
+} 
+
+/* Contenedor principal para centrar las dos columnas (artículo y formulario) */
+.containerr {
+    display: flex;
+    gap: 20px; /* Separación entre las columnas */
+    margin: 30px auto; 
+    padding: 0 30px; 
+    max-width: 1300px; 
+    position: relative; /* Importante para que .social-icons se posicione con respecto a este contenedor */
+}
+
+
+/*
+  =======================================================
+  2. ESTILOS DEL ENCABEZADO Y NAVEGACIÓN (HEADER)
+  =======================================================
+*/
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  position: fixed; /* Barra fija en la parte superior */
+  top: 0;
+  left: 0;
+  right: 0;
+  background: #fff;
+  z-index: 1000;
+  box-shadow: 0 0px 0px rgba(0,0,0,0.1);
+}
+
+.logo-img {
+  height: 30px;
+   transform: translateX(130%);
+}
+
+.menu {
+  display: flex;
+  gap: 40px; 
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 8px; /* Espacio para la línea debajo del texto */
+  transition: color 0.3s ease;
+}
+
+/* El texto se vuelve naranja al pasar el cursor o al estar activo */
+.menu a:hover,
+.menu a.active {
+  color: #FF4F1F !important;
+}
+
+/* Línea naranja inicial */
+.menu a::after {
+  content: '';
+  display: block;
+  width: 25px; 
+  height: 8px;
+  background-color: #FF4F1F; 
+  border-radius: 50px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: width 0.3s ease, background-color 0.3s ease;
+}
+
+/* Efecto al pasar el cursor o hacer clic: la barra se extiende y se vuelve verde */
+.menu a:hover::after,
+.menu a.active::after {
+  width: 100%; 
+  background-color: #559942; /* Color verde */
+}
+
+.contact-btn {
+  background: #ff5722;
+  color: #fff;
+  padding: 10px 25px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s;
+  transform: translateX(-95%);
+}
+
+.contact-btn:hover {
+  background: #e64a19;
+}
+
+
+/*
+  =======================================================
+  3. ESTILOS DEL ARTÍCULO (COLUMNA IZQUIERDA)
+  =======================================================
+*/
+.article-column {
+    display: flex;
+    flex-direction: column;
+    width: 60%; 
+    flex-grow: 1; 
+    background-color: white; 
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+    overflow: hidden; 
+    margin: 0;
+}
+
+/* Contenedor de la imagen */
+.article-header {
+    position: relative;
+    margin-bottom: 0;
+}
+
+/* Imagen Principal de Cabecera */
+.main-image {
+    width: 100%; 
+    height: 310px;
+    object-fit: cover; 
+    display: block;
+    filter: brightness(0.95);
+    position: relative; 
+    top: 0;
+    left: 0; 
+    border-radius: 0;
+}
+
+/* Fecha */
+.date{
+    color: #999;
+    font-size: 0.9em;
+    padding: 0 25px; 
+    margin-top: 15px; 
+    margin-bottom: 10px;
+    width: auto;
+}
+
+/* BARRA DE ICONOS DEGRADADO - REVERTIDA A CÓDIGO ORIGINAL */
+.social-icons {
+    /* PROPIEDADES ORIGINALES: Posiciona la barra de forma absoluta dentro del .containerr */
+    position: absolute;
+    /* bottom: 0; */ 
+    /* left: 0; */
+    /* right: 0; */
+    
+    display: flex;
+    justify-content: flex-end; 
+    align-items: center;
+    
+    padding: 1px 2px;
+    
+    width: 39%; /* Ancho fijo */
+    height: 15px; 
+    
+    background: linear-gradient(to right, #559942, #f1c40f, #e67e22, #e74c3c);
+    
+    /* Transformación original que la posiciona */
+    transform:translateX(37%) translateY(-2790%); 
+}
+
+/* Estilo para los iconos de imagen */
+.social-icons img {
+    height: 15px; 
+    width: 25px; 
+    margin-left: 15px; 
+    vertical-align: middle;
+}
+
+/* Contenedor del texto */
+.article-content {
+    padding: 0 25px 25px 25px; 
+    width: 100%; 
+    box-sizing: border-box; 
+    position: relative;
+    margin-top: 0; 
+}
+
+/* Título Principal */
+.main-title {
+    font-size: 1.8em;
+    font-weight: 800; 
+    color: #5b5a5a; 
+    margin-top: 0;
+    margin-bottom: 5px;
+    width: 100%; 
+}
+
+/* Estilos de párrafos y contenido */
+.article-content p {
+    font-size: 0.9em;
+    font-weight: 400; 
+    color: #555555; 
+    line-height: 1.6; 
+    margin-bottom: 20px;
+    width: 100%; 
+}
+
+/* Subtítulos */
+.sub-title {
+    font-size: 1.1em;
+    font-weight: 700; 
+    color: #4a4a4a;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+/* Títulos de lista */
+.list-title {
+    font-size: 1.1em;
+    font-weight: 600; 
+    color: #7d7c7c;
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+
+/*
+  =======================================================
+  4. ESTILOS DEL FORMULARIO (COLUMNA DERECHA)
+  =======================================================
+*/
+.form-column {
+    padding: 20px; 
+    width: 40%; 
+    flex: none;
+    background-color: white; 
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+}
+
+/* Título "CONTÁCTANOS" */
+.form-title {
+    font-size: 1.5em;
+    font-weight: 800;
+    color: #4CAF50; 
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 30px;
+}
+
+/* Estilos de las etiquetas y campos */
+.form-column label {
+    display: block;
+    font-size: 0.9em;
+    font-weight: 600;
+    color: #4CAF50; 
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+.form-column input[type="text"],
+.form-column input[type="email"],
+.form-column input[type="tel"],
+.form-column textarea {
+    width: 100%;
+    padding: 8px 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.9em;
+    color: #555;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+/* Botón ENVIAR */
+.send-button {
+    width: 100%;
+    padding: 10px 20px;
+    margin-top: 30px;
+    background-color: #5cb85c; 
+    color: white;
+    border: none;
+    border-radius: 25px; 
+    font-size: 1.1em;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* ESTILOS DE VALIDACIÓN */
+.form-column .error {
+    border: 2px solid #e74c3c !important; 
+    box-shadow: 0 0 5px rgba(231, 76, 60, 0.5);
+}
+
+
+/*
+  =======================================================
+  5. ESTILOS DEL PIE DE PÁGINA (FOOTER)
+  =======================================================
+*/
+footer {
+  background-color: #6aa438;
+  color: white;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+footer img {
+  max-height: 50px;
+  margin-bottom: 20px;
+}
+
+footer hr {
+  border: none;
+  border-top: 1px solid white;
+  width: 85%;
+  margin: 20px auto;
+}
+
+/* Clases específicas del footer que proporcionaste */
+.footer-tpp {
+    background-color: #6aa438;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+    margin-top: 40px; 
+}
+
+.logo-image {
+  max-height: 50px;
+  margin-bottom: 20px;
+}
+
+.footer-line {
+  border: none;
+  border-top: 1px solid white;
+  width: 85%;
+  margin: 20px auto;
+}
+
+.social-section p {
+    margin-top: 0;
+}
+
+/*
+  =======================================================
+  6. MEDIA QUERIES (PARA MÓVILES)
+  =======================================================
+*/
+@media (max-width: 900px) {
+    .containerr {
+        flex-direction: column; /* Apila las columnas */
+        gap: 0;
+    }
+
+    .article-column {
+        max-width: 100%;
+        border-right: none;
+        border-bottom: 1px solid #eee;
+    }
+
+    .form-column {
+        width: 100%;
+        padding-top: 20px;
+    }
+    
+    .form-title {
+        text-align: center;
+    }
+}
